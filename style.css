@@ -1,0 +1,83 @@
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #f3f3f3;
+        color: black;
+    }
+
+    #dialogbox {
+        background: white;
+    }
+
+    #addBtnImg {
+        content: url("assets/light/add.png");
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #181818;
+        color: white;
+    }
+
+    #dialogbox {
+        background: black;
+    }
+
+    #addBtnImg {
+        content: url("assets/dark/add.png");
+    }
+}
+
+/* Shortcuts */
+#shortcuts-container {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.shortcut {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.shortcut a {
+    margin-right: 5px;
+    color: #3482AB;
+}
+
+.shortcut a:hover {
+    color: #48B3EB;
+}
+
+.delete-button {
+    cursor: pointer;
+}
+
+.delete-button-icon {
+    content: url("assets/delete.png");
+}
+
+#addBtn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+#header {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}

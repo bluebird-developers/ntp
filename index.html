@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="The bluebird newtab page">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New tab</title>
+  <script src="script.min.js" defer></script>
+  <link rel="stylesheet" href="style.min.css" />
+  <link rel="stylesheet" href="fluent-ui.css" />
+</head>
+
+<body>
+  <div id="header">
+    <img src="assets/logo.png" alt="Bluebird logo" />
+    <p>Bluebird</p>
+  </div>
+  <ul id="shortcuts-container"></ul>
+  <button id="addBtn" onclick="openDialog()"><img id="addBtnImg"></img></button>
+  <div id="dialogContainer">
+    <div id="dialog-box">
+      <h3>Add Shortcut</h3>
+      <a>Label</a><br>
+      <input class="fluent-textbox" type="text" id="label">
+      <br>
+      <a>Url</a><br>
+      <input class="fluent-textbox" type="text" id="url">
+      <br>
+      <button style="width: 50%; float: left;" class="fluent-Button" onclick="addShortcut()">Add</button>
+      <button style="width: 50%; float: left;" class="fluent-Button" onclick="closeDialog()">Cancel</button>
+    </div>
+  </div>
+</body>
+</html>
