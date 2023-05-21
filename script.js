@@ -20,15 +20,15 @@ function addShortcut() {
       shortcuts = JSON.parse(shortcuts);
     }
 
-    shortcuts.push(shortcut);
     if (shortcuts.length > 4) {
       shortcuts.shift();
-      alert("Error: You cannot add more than 4 shortcuts")
+      alert("Error: You cannot add more than 5 shortcuts")
     }
-
-    localStorage.setItem('shortcuts', JSON.stringify(shortcuts));
-    renderShortcuts();
-
+    else {
+      shortcuts.push(shortcut);
+      localStorage.setItem('shortcuts', JSON.stringify(shortcuts));
+      renderShortcuts();
+    }
     closeDialog();
     document.getElementById('label').value = '';
     document.getElementById('url').value = '';
