@@ -44,6 +44,7 @@
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    display: grid;
 }
 
 .shortcut a {
@@ -55,11 +56,18 @@
     color: #48B3EB;
 }
 
-.delete-button {
+/* favicon img */
+.shortcut img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* delete button */
+.shortcut button {
     cursor: pointer;
 }
 
-.delete-button-icon {
+.shortcut button img {
     content: url("assets/delete.png");
 }
 

@@ -56,9 +56,11 @@ function renderShortcuts() {
       var li = document.createElement('li');
       li.className = 'shortcut';
 
-      var a = document.createElement('a');
-      a.innerText = shortcut.label;
-      a.href = shortcut.url;
+      var faviconimg = document.createElement('img');
+      faviconimg.src = "https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=" + shortcut.url + "&size=32";
+      var label = document.createElement('a');
+      label.innerText = shortcut.label;
+      label.href = shortcut.url;
 
       var deleteButton = document.createElement('button');
       var deleteButtonIcon = document.createElement('img');
@@ -66,8 +68,8 @@ function renderShortcuts() {
       deleteButton.onclick = function () {
         deleteShortcut(index);
       };
-      deleteButtonIcon.className = 'delete-button-icon';
-      li.appendChild(a);
+      li.appendChild(faviconimg);
+      li.appendChild(label);
       deleteButton.appendChild(deleteButtonIcon);
       li.appendChild(deleteButton);
       container.appendChild(li);
