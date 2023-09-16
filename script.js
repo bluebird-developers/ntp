@@ -1,3 +1,8 @@
+window.addEventListener('load', 
+  function() { 
+    renderShortcuts();
+});
+
 function openDialog() {
   document.getElementById('dialogContainer').style.display = 'block';
 }
@@ -63,18 +68,15 @@ function renderShortcuts() {
       label.href = shortcut.url;
 
       var deleteButton = document.createElement('button');
-      var deleteButtonIcon = document.createElement('img');
+      deleteButton.innerHTML = "&#xE107;";
       deleteButton.className = 'delete-button';
       deleteButton.onclick = function () {
         deleteShortcut(index);
       };
       li.appendChild(faviconimg);
       li.appendChild(label);
-      deleteButton.appendChild(deleteButtonIcon);
       li.appendChild(deleteButton);
       container.appendChild(li);
     });
   }
 }
-
-renderShortcuts();

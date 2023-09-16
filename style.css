@@ -9,7 +9,7 @@
     }
 
     #addBtnImg {
-        content: url("assets/light/add.png");
+        color: black;
     }
 }
 
@@ -24,7 +24,7 @@
     }
 
     #addBtnImg {
-        content: url("assets/dark/add.png");
+        color: white;
     }
 }
 
@@ -65,10 +65,8 @@
 /* delete button */
 .shortcut button {
     cursor: pointer;
-}
-
-.shortcut button img {
-    content: url("assets/delete.png");
+    font-family: "Segoe MDL2 Assets";
+    color: red;
 }
 
 #addBtn {
@@ -78,6 +76,11 @@
     position: fixed;
     right: 10px;
     bottom: 10px;
+}
+
+#addBtnImg {
+    font-family: "Segoe MDL2 Assets";
+    font-size: 20px;
 }
 
 #header {
