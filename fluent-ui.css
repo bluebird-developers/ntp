@@ -13,6 +13,15 @@ body {
     #dialog-box {
         background-color: #f3f3f3;
     }
+
+    .fluent-Button {
+        background-color: #fbfbfb;
+        color: white;
+    }
+
+    .fluent-Button:hover {
+        background-color: #f6f6f6;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +34,15 @@ body {
 
     #dialog-box {
         background-color: #181818;
+    }
+
+    .fluent-Button {
+        background-color: #2d2d2d;
+        color: white;
+    }
+
+    .fluent-Button:Hover {
+        background-color: #323232;
     }
 }
 
@@ -48,26 +66,38 @@ body {
     border: 1px solid #9a9a9a;
 }
 
-.fluent-Button {
+.fluent-AccentButton {
     background-color: #62cdfe;
     border-radius: 5px;
     border: none;
     width: 100%;
     display: inline-block;
-    cursor: default;
+    cursor: pointer;
     color: black;
     font-size: 13px;
     padding: 7px;
     text-decoration: none;
 }
 
-.fluent-Button:hover {
+.fluent-AccentButton:hover {
     background-color: #47b1e8;
 }
 
-.fluent-Button:active {
+.fluent-AccentButton:active {
     background-color: #42a1d2;
     color: #245874;
+}
+
+.fluent-Button {
+    background-color: #2d2d2d;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 7px;
+    text-decoration: none;
 }
 
 .fluent-textbox {
